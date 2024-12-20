@@ -1,0 +1,129 @@
+body{
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231d0000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%233a0000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23560000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23730000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23900000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+color:white
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header h1 {
+    font-size: 40px;
+    font-weight: 500;
+font-family: "Trade Winds";
+    }
+
+span{
+color: red;
+}
+ul {
+display: flex;
+    }
+            
+ul li {
+padding: 8px 12px;
+list-style: none;
+}
+ul li a {
+color: white;
+text-decoration: none;
+font-size: 17px;
+transition: 0.5s;
+}
+ul li a:hover {
+color: rgb(255, 0, 0);
+border-bottom: 2px solid ;
+}
+h2{
+text-align: center;
+font-size: 2.25em;
+}
+    .card {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+        
+        
+      }
+      
+
+      
+      .card:hover {
+        transform: rotate(-5deg) scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      .card__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        opacity: 0;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+      
+      .card:hover .card__content {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 1;
+      }
+      
+      .card__title {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+        font-weight: 700;
+      }
+      
+      .card__description {
+        margin: 10px 0 0;
+        font-size: 14px;
+        color: #777;
+        line-height: 1.4;
+      }
+      
+      
+      
+.carte{
+display: flex;
+justify-content: center;
+}
+
+p{
+
+      gap: 100px; 
+      padding-bottom: 2em;
+      font-size: 18px;
+      font-family: "signika";
+      color: #ffffff;
+      background-color:rgb(0, 0, 0,0.55);
+      margin-left: 5%;
+      margin-right:5%
+}
+   
+@media only screen and (max-width:425px) and (min-width:320px)
+
+{
+    ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
